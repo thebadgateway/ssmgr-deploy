@@ -2,9 +2,9 @@ This script is a one-click deployment script for the shadowsocks-manager server.
 
 ### Version introduction
 
-server uses is shadowsocks-libev[View the latest version](https://github.com/shadowsocks/shadowsocks-libev/releases)
+server uses is shadowsocks-libev [View the latest version](https://github.com/shadowsocks/shadowsocks-libev/releases)
 
-server uses is shadowsocks-manager[View the latest version](https://github.com/shadowsocks/shadowsocks-manager)
+server uses is shadowsocks-manager [View the latest version](https://github.com/shadowsocks/shadowsocks-manager)
 
 
 ### installation method
