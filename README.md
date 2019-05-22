@@ -1,15 +1,15 @@
-此脚本为shadowsocks-manager服务端一键部署脚本
+This script is a one-click deployment script for the shadowsocks-manager server.
 
-### 版本介绍
+### Version introduction
 
-服务端用到的是shadowsocks-libev[查看最新版](https://github.com/shadowsocks/shadowsocks-libev/releases)
+server uses is shadowsocks-libev[View the latest version](https://github.com/shadowsocks/shadowsocks-libev/releases)
 
-服务端安装的是shadowsocks-manager[查看最新版](https://github.com/shadowsocks/shadowsocks-manager)
+server uses is shadowsocks-manager[View the latest version](https://github.com/shadowsocks/shadowsocks-manager)
 
 
-### 安装方法
+### installation method
 
-安装wget
+Install wget
 ```
 # centos
 yum -y install wget
@@ -18,7 +18,7 @@ yum -y install wget
 apt-get -y install wget
 ```
 
-下载脚本
+Download script
 ```
 rm -rf ./install.sh ./shadowsocks-manager.log
 wget --no-check-certificate https://raw.githubusercontent.com/quniu/ssmgr-deploy/master/install.sh
@@ -27,37 +27,37 @@ chmod +x install.sh
 ```
 
 
-### 功能
-- 安装shadowsocks-manager服务
-- 设置固定时间自动重启（选最后一项）
+### Features
+- Install the shadowsocks-manager service
+- Set a fixed time to automatically restart (select the last item)
 
 
 
-### 安装说明
-日志在`/root/`下面
+### Installation Notes
+The log is under `/root/`
 
-脚本在`/root/`下面
+The script is under `/root/`
 
-shadowsocks-manager 安装目录在`/usr/local/`下面
-
-
-
-### 监听端口
-
-服务端启用端口`6001`
-
-客户端启用端口`6002`（亦可自己定义）
-
-客户端启用密码`需要自己填写`
+shadowsocks-manager Installation directory at`/usr/local/`
 
 
 
-### 查看shadowsocks服务
+### Listening port
 
-默认安装成功之后会自动启动ss服务,重启也会自动启动ss服务
+Server enabled port `6001`
+
+The client enables port `6002` (can also be defined by itself)
+
+The client enables the password `you need to fill it out yourself.
+
+
+
+### View the shadowsocks service
+
+After the default installation is successful, the ss service will be started automatically, and the restart will automatically start the ss service.
 ```
 # status stop start restart
 /etc/init.d/shadowsocks-manager status
 ```
 
-本脚本纯属学习用，请勿用于商业活动
+This script is purely for learning, please do not use it for commercial activities.
