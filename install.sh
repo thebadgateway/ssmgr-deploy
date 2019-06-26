@@ -726,7 +726,7 @@ install_prepare_manager(){
 start_pm2_manager(){
     cd /usr/local/${shadowsocks_manager_name}
 
-    pm2 --name "ss-libev" -f start server.js -x -- -c default.yml
+    pm2 --name "ss-libev" -f start server.js -m chacha20-ietf-poly1305 -x -- -c default.yml
 
     if [ $? -eq 0 ]; then
         echo -e "[${green}Info${plain}] PM2 start service success!"
